@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Bae ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sky">
+    <div class="moon"></div>
+    <div class="star-field" id="starField"></div>
+  </div>
+
+  <main class="app">
+
+    <!-- 1 · WELCOME -->
+    <section class="screen active" id="welcome">
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="letter">
+          <span class="letter-mark">🦌</span>
+          <span class="letter-word">чамд</span>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="seal">❤</div>
+      </div>
+
+      <h1>Сайн уу <br><em> My girl </em>  ❤️</h1>
+      <p class="sub">Чамд зориулж жижигхэн зүйл бэлдлээ.<br>Дараад үзээрэй.</p>
+
+      <div class="day-counter" id="dayCounter">
+        <span class="day-counter-num" id="dayCounterNum">0</span>
+        <span class="day-counter-label">хоног хамт</span>
+      </div>
+
+      <button class="primary" id="openBtn"><span>Нээж үзэх</span></button>
+    </section>
+
+    <!-- 2 · MEMORY -->
+    <section class="screen" id="memory">
+      <h2>Чамтай холбоотой<br><em>бүх зүйл</em> надад үнэ цэнтэй</h2>
+
+      <div class="photo-frame">
+        <img src="images/photo1.jpg" alt="Our memory" onerror="this.style.display='none'; this.parentElement.classList.add('empty')">
+        <div class="photo-placeholder">
+          <span>🦌</span>
+          <small>images/photo1.jpg<br>зургаа энд байрлуулаарай</small>
+        </div>
+        <div class="tape"></div>
+      </div>
+
+      <button class="primary next"><span>Цааш нь</span></button>
+    </section>
+
+    <!-- 3 · LETTER -->
+    <section class="screen" id="letterScreen">
+      <h2 class="quiet-heading">Хэдэн үг чиний төлөө</h2>
+      <div class="type-box">
+        <p id="typedText"></p>
+        <span class="cursor">|</span>
+      </div>
+      <button class="primary next" id="letterNext" disabled><span>Нэг зүйл үлдлээ...</span></button>
+    </section>
+
+    <!-- 4 · QUESTION -->
+    <section class="screen" id="question">
+      <h2>Нэг зүйл асуумаар байна...</h2>
+      <p class="sub" id="questionTease">Чи надад хайртай юу? 🦌❤️</p>
+
+      <div class="choice-row">
+        <button class="choice yes" id="yesBtn"><span>Тийм</span></button>
+        <button class="choice no" id="noBtn"><span>Үгүй</span></button>
+      </div>
+    </section>
+
+    <!-- 5 · FINAL -->
+    <section class="screen" id="final">
+      <div class="final-heart">❤️</div>
+      <h2>Чамайг олсондоо<br><em>би үнэхээр баяртай.</em></h2>
+      <p class="final-text">
+        Амьдралд олон хүнтэй таардаг ч<br>
+        зарим хүн нь л зүрхэнд үлддэг юм байна.
+      </p>
+      <div class="signature">— чамайг хайрладаг хүнээс ❤️</div>
+      <div class="hearts">♥ ♥ ♥</div>
+    </section>
+
+  </main>
+
+  <div class="progress" id="progress">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div id="confetti"></div>
+  <script src="script.js"></script>
+</body>
+</html>
